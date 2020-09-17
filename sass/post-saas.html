@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="../img/favicon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="../img/favicon-180x180.png" />
+  <meta name="msapplication-TileImage" content="../img/favicon-270x270.png" />
+  <title>SAAS - Post</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Poppins:300,400,400i,600|Source+Sans+Pro:400,400i,600,700,900|Mukta:400,700,800|Oswald:400,600|Lato:400,400i,700|Roboto:300,400,500,700|Roboto+Slab:400,700|Playfair+Display:400,400i,700i,700|Catamaran:300,400,500,600,700,900|Merriweather:400,700|Montserrat:400,500,600|Nunito|Open+Sans:300,400,500,600|Caveat:400,700|Dancing+Script|Libre+Baskerville:400,700"
+    rel="stylesheet">
+  <!-- STYLES -->
+  <!-- Main Style -->
+  <link rel="stylesheet" id="style-main" href="../css/styles-main.css?v=3">
+  <link rel="stylesheet" id="swiper-main" href="../vendors/swiper/swiper.min.css">
+  <link rel="stylesheet" id="lity-main" href="../vendors/lity/lity.min.css">
+  <link rel="stylesheet" id="mediaelementplayer" href="../vendors/mediaelement/mediaelementplayer.min.css">
+  <link rel="stylesheet" id="range" href="../vendors/range/jquery.range.css">
+  <link rel="stylesheet" id="lightgallery" href="../vendors/lightgallery/lightgallery.min.css">
+  <link rel="stylesheet" id="style-link" href="../css/styles-9.css?v=35">
+  <!-- SCRIPTS -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.3.0.js" integrity="sha256-/Gj+NlY1u/J2UGzM/B2QrWR01trK8ZZqrD5BdqQUsac=" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <script src="../vendors/swiper/swiper.min.js"></script>
+  <!-- Isotope -->
+  <script src="../vendors/isotope/isotope.pkgd.min.js"></script>
+  <!-- Images loaded library -->
+  <script src="../vendors/lazyload/imagesloaded.pkgd.min.js"></script>
+  <!-- MediaElement js library (only for Aheto HTML) -->
+  <script src="../vendors/mediaelement/mediaelement.min.js"></script>
+  <script src="../vendors/mediaelement/mediaelement-and-player.min.js"></script>
+  <!-- Typed animation text -->
+  <script src="../vendors/typed/typed.min.js"></script>
+  <!-- Lity Lightbox -->
+  <script src="../vendors/lity/lity.min.js"></script>
+</head>
+
+<body data-anm=".anm" class="blog--single blog--single__post">
+  <header class="aheto-header aheto-header-9">
+    <div class="aheto-header-9__nav-wrap">
+      <div class="aheto-header-9__inner">
+        <div class="aheto-header-9__line">
+          <div class="aheto-header-9__logo">
+            <div class="logo">
+              <a class="logo__link" href="">
+                <div class="logo__img-holder">
+                  <img class="logo__img" src="../img/home/home-saas/logo-1.png" alt="Logo image">
+                </div>
+                <div class="logo__text-holder">
+                  <h3 class="logo__text">Karma</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="aheto-header-9__menu js-menu js-menu-height">
+            <ul class="main-menu padding-lg-5t padding-md-0t">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item--mega-menu ">
+                <a href="home-saas.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="about-saas.html">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                <a href="#">Features</a>
+                <ul class="sub-menu menu-depth-1">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="features-saas.html">Features saas</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="features-details-saas.html">Features details saas</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                <a href="#">Blog</a>
+                <ul class="sub-menu menu-depth-1">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog-saas.html">Blog saas</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="post-saas.html">Post saas</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="pricing-saas.html">Pricing</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="contact-saas.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="aheto-header-9__authentication">
+              <div class="authentication">
+                <button class="authentication__sign-in" type="button">Sign In</button>
+                <button class="authentication__sign-up" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+          <div class="aheto-header-9__hamburger">
+            <button class="hamburger hamburger--squeeze js-hamburger js-hamburger--body-over" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="aheto-banner aheto-banner--height-450 aheto-banner--height-mob-200" style="background-image: url('../img/SAAS/feature_bg.png'); background-position: 0px -450px;">
+    <div class="container d-flex h-100 justify-content-center align-items-center">
+      <div class="row padding-lg-60t padding-sm-0t">
+        <div class="aheto-heading t-center aheto-heading--t-white">
+          <h1 class="aheto-heading__title          t-light ">Single Post Name</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="post-content">
+    <div class="aht-page container margin-lg-100b margin-lg-120t margin-md-80t margin-md-80b margin-sm-50t margin-sm-50b
+    aht-page--no-sb
+    
+    
+    
+    ">
+      <div class="aht-page__inner">
+        <div class="aht-page__content">
+          <div class="aht-page__content-inner">
+            <article class="post">
+              <div class="post-data margin-lg-120t margin-lg-120b margin-md-80t margin-md-80b margin-sm-50t margin-sm-50b">
+                <pre><img src="../img/SAAS/post_img-1.png" alt="" class="w-100"></pre>
+                <div class="container no-padd">
+                  <div class="row">
+                    <div class="col-md-12 padding-lg-40t padding-sm-20t">
+                      <p>Cras quis neque id augue malesuada facilisis ac eget nunc. Sed dictum arcu erat, at fermentum erat semper vel. Ut ac cursus nulla, at tempor tortor. Phasellus ante leo, lacinia ac semper ac, hendrerit nec diam. Cras nec
+                        ligula in justo volutpat bibendum. Duis vitae odio bibendum, varius augue non, scelerisque odio. Nulla facilisi. Praesent tincidunt ante erat, vel feugiat tortor rutrum et. Vivamus vitae elit nibh. Nulla sollicitudin purus
+                        vel felis feugiat, at ultrices urna interdum. Morbi dignissim feugiat ipsum sit amet sodales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="offset-md-1 col-md-11 margin-lg-65t margin-lg-60b margin-md-65t margin-sm-40b margin-sm-45t">
+                      <blockquote class="t-left">
+                        <h3>“Nunc a facilisis quam. Sed laoreet non nunc eu tincidunt. Nunc eget diam lectus. In velit ex, imperdiet eu aliquet sed, aliquet et elit. Sed eu odio tortor.”<br>&nbsp;</h3>
+                        <p>– MICHAEL VOUGE</p>
+                      </blockquote>
+                    </div>
+                    <p>Nunc a facilisis quam. Sed laoreet non nunc eu tincidunt. Nunc eget diam lectus. In velit ex, imperdiet eu aliquet sed, aliquet et elit. Sed eu odio tortor. Integer vitae enim semper augue consequat ultrices. Quisque
+                      condimentum pellentesque.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 margin-lg-35t margin-sm-15t  margin-lg-10b img_text_container">
+                    <div class="img-content">
+                      <img class="alignnone size-full img-fluid" alt="" src="../img/SAAS/post_img-2.png">
+                      <h6 class="t-center margin-lg-20t "><b>Luctus aucto</b></h6>
+                    </div>
+                    <h6 class="margin-lg-10b"><b>Efficitur convallis</b></h6>
+                    <p>Praesent venenatis accumsan massa blandit interdum. Praesent quis leo nulla. Mauris eleifend pharetra imperdiet. Cras quis neque id augue malesuada facilisis ac eget nunc. Sed dictum arcu erat, at fermentum erat semper vel. Ut
+                      ac cursus nulla, at tempor tortor. Phasellus ante leo, lacinia ac semper ac, hendrerit nec diam. Cras nec ligula in justo volutpat bibendum. Duis vitae odio bibendum, varius augue non, scelerisque odio. Nulla facilisi.</p>
+                    <p>Praesent tincidunt ante erat, vel feugiat tortor rutrum et. Vivamus vitae elit nibh. Nulla sollicitudin purus vel felis feugiat, at ultrices urna interdum. Morbi dignissim feugiat ipsum sit amet sodales.
+                      Sed pulvinar purus at ipsum elementum congue. Integer fringilla dolor et magna rutrum, eu ultricies justo suscipit. Quisque dapibus, mauris sit amet dictum suscipit, tortor ante bibendum magna, sit amet volutpat risus nulla
+                      vitae nisl. Vivamus nulla tellus, luctus et lorem eget, rhoncus ullamcorper nunc. Nunc a facilisis quam. Sed laoreet non nunc eu tincidunt. Nunc eget diam lectus. In velit ex, imperdiet eu aliquet sed, aliquet et elit. Sed eu
+                      odio tortor. Integer vitae enim semper augue consequat ultrices. Quisque condimentum dui id ipsum tristique, sit amet viverra est pellentesque.</p>
+                    <p>Aenean feugiat, lectus non tincidunt lacinia, mauris erat faucibus mauris, sed laoreet ante sem et diam. Vivamus in metus id erat imperdiet faucibus.</p>
+                  </div>
+                </div>
+                <div class="post-meta">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="tags">
+                        <span>Tags</span>
+                        <a href="#">Notarization,</a>
+                        <a href="#">Tip,</a>
+                        <a href="#">Law</a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#" class="likes">
+                        <i class="fa fa-heart"></i>
+                        08 Likes
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-author-info margin-lg-30t">
+                  <img alt="" src="../img/inner-pages/blog/avatar-1.png" class="avatar" height="60" width="60">
+                  <p><b>About the author: Katty Nguyen</b></p>
+                  <p>Prototype intuitive intuitive thought leader personas parallax paradigm long shadow engaging unicorn SpaceTeam fund ideate paradigm. Pair programming 360 campaign piverate minimum viable product pair programming bootstrapping.</p>
+                  <p>More posts by <a href="#">Katty Nguyen</a></p>
+                </div>
+                <div class="text-center">
+                  <div class="aht-socials aheto-socials--circle">
+                    <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="#">
+                      <i class="aht-socials__icon icon ion-social-facebook"></i>
+                    </a>
+                    <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="#">
+                      <i class="aht-socials__icon icon ion-social-twitter"></i>
+                    </a>
+                    <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="#">
+                      <i class="aht-socials__icon icon ion-social-tumblr"></i>
+                    </a>
+                    <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="#">
+                      <i class="aht-socials__icon icon ion-social-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background: #f1f8fe;">
+      <div class="container">
+        <div class="row padding-md-70t padding-sm-40t padding-lg-105t  padding-sm-0b f-30">
+          <div class="col-md-8 offset-md-2">
+            <div class="aheto-heading t-center ">
+              <h2 class="aheto-heading__title          t-light ">More Recent Stories</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row padding-lg-30t padding-lg-120b padding-md-75b padding-sm-50b padding-sm-50b padding-md-0t">
+          <div class="related-posts alt single_post_slider ">
+            <div class="container ">
+              <div class="swiper swiper--recent-posts ">
+                <div class="swiper-container " data-speed="500" data-spaceBetween="30" data-slidesPerView="responsive" data-add-slides="2" data-lg-slides="2" data-sm-slides="2" data-xs-slides="1">
+                  <div class="swiper-wrapper ">
+                    <div class="swiper-slide ">
+                      <article class="post format-image background-transparent">
+                        <div class="content-top-wrapper">
+                          <div class="image-wrapper">
+                            <img src="../img/inner-pages/blog/img_28.jpg" alt="post img" class="js-bg">
+                          </div>
+                          <div class="post-cats">
+                            <a href="#" rel="category tag">Web design</a>
+                            <a href="#" rel="category tag">Tips</a>
+                          </div>
+                        </div>
+                        <div class="content-wrapper">
+                          <p class="post-date">25 Jul, 2019</p>
+                          <h1 class="post-title"><a href="#">I try to look at design from a more conceptual standpoint.</a></h1>
+                          <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide ">
+                      <article class="post format-image background-transparent">
+                        <div class="content-top-wrapper">
+                          <div class="image-wrapper">
+                            <img src="../img/inner-pages/blog/image-5.jpg" alt="post img" class="js-bg">
+                          </div>
+                          <div class="post-cats">
+                            <a href="#" rel="category tag">Tips</a>
+                          </div>
+                        </div>
+                        <div class="content-wrapper">
+                          <p class="post-date">25 Jul, 2019</p>
+                          <h1 class="post-title"><a href="#">I try to look at design from a more conceptual standpoint.</a></h1>
+                          <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide ">
+                      <article class="post format-image background-transparent">
+                        <div class="content-top-wrapper">
+                          <div class="image-wrapper">
+                            <img src="../img/inner-pages/blog/img_20.png" alt="post img" class="js-bg">
+                          </div>
+                          <div class="post-cats">
+                            <a href="#" rel="category tag">Tips</a>
+                          </div>
+                        </div>
+                        <div class="content-wrapper">
+                          <p class="post-date">25 Jul, 2019</p>
+                          <h1 class="post-title"><a href="#">I try to look at design from a more conceptual standpoint.</a></h1>
+                          <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide ">
+                      <article class="post format-image background-transparent">
+                        <div class="content-top-wrapper">
+                          <div class="image-wrapper">
+                            <img src="../img/inner-pages/blog/image-5.jpg" alt="post img" class="js-bg">
+                          </div>
+                          <div class="post-cats">
+                            <a href="#" rel="category tag">Tips</a>
+                          </div>
+                        </div>
+                        <div class="content-wrapper">
+                          <p class="post-date">25 Jul, 2019</p>
+                          <h1 class="post-title"><a href="#">I try to look at design from a more conceptual standpoint.</a></h1>
+                          <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination "></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aht-page__content-inner">
+      <div class="container">
+        <div class="row padding-sm-45t padding-md-75t padding-lg-115t padding-lg-70b padding-md-60b padding-md-40b padding-sm-20b f-30">
+          <div class="col-md-8 offset-md-2">
+            <div class="aheto-heading t-center ">
+              <h2 class="aheto-heading__title          t-light ">03 Comments</h2>
+            </div>
+          </div>
+        </div>
+        <div class="comment padding-lg-90b padding-md-55b padding-md-25b padding-sm-40b">
+          <div class="comment-item ">
+            <div class="comment-container d-md-flex">
+              <div class="comment-author">
+                <img src="../img/inner-pages/blog/selena.png" class="author-photo" alt="">
+                <a href="#" class="btn-reply"><i class="icon ion-ios-undo"></i>Reply</a>
+              </div>
+              <div class="comment-content">
+                <a href="#" class="author-name">Selena Gomez</a>
+                <span class="comment-date">2 days ago</span>
+                <p class="comment-text">Prototype intuitive intuitive thought leader personas parallax paradigm long shadow engaging unicorn SpaceTeam fund ideate paradigm.</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item ">
+            <div class="comment-container d-md-flex">
+              <div class="comment-author">
+                <img src="../img/inner-pages/blog/iryna.png" class="author-photo" alt="">
+                <a href="#" class="btn-reply"><i class="icon ion-ios-undo"></i>Reply</a>
+              </div>
+              <div class="comment-content">
+                <a href="#" class="author-name">Iryna Petrunko</a>
+                <span class="comment-date">2 days ago</span>
+                <p class="comment-text">Prototype intuitive intuitive thought leader personas parallax paradigm long shadow engaging unicorn SpaceTeam fund ideate paradigm.</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment-item comment-children">
+            <div class="comment-container d-md-flex">
+              <div class="comment-author">
+                <img src="../img/inner-pages/blog/anias.png" class="author-photo" alt="">
+                <a href="#" class="btn-reply"><i class="icon ion-ios-undo"></i>Reply</a>
+              </div>
+              <div class="comment-content">
+                <a href="#" class="author-name">Anais Coulon</a>
+                <span class="comment-date">2 days ago</span>
+                <p class="comment-text">Prototype intuitive intuitive thought leader personas parallax paradigm long shadow engaging unicorn SpaceTeam fund ideate paradigm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background: #f1f8fe;">
+      <div class="container">
+        <div class="row padding-lg-90t padding-lg-60b padding-md-70t padding-md-40b padding-sm-40t padding-sm-10b f-30">
+          <div class="col-md-8 offset-md-2">
+            <div class="aheto-heading t-center ">
+              <h2 class="aheto-heading__title          t-light ">Leave a Reply</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 padding-lg-110b padding-md-80b padding-sm-50b">
+            <div class="aheto-form aheto-form--default">
+              <form class="wpcf7-form">
+                <p>
+                  <span class="wpcf7-form-control-wrap Name">
+                    <input type="text" name="Name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Gunsury">
+                  </span>
+                  <span class="wpcf7-form-control-wrap Email">
+                    <input type="email" name="Email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Email">
+                  </span>
+                  <span class="wpcf7-form-control-wrap Phone">
+                    <input type="tel" name="Website" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Website">
+                  </span>
+                </p>
+                <p>
+                </p>
+                <p>
+                  <span class="wpcf7-form-control-wrap Message">
+                    <textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+                  </span>
+                </p>
+                <p class="form-bth-holder">
+                  <input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit ">
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="aheto-footer aheto-footer-9">
+    <div class="aheto-footer-9__main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_aheto ">
+              <div class="widget_aheto__logo">
+                <img src="../img/home/footer-logo-5.png" alt="footer">
+              </div>
+              <div class="widget_aheto__infos">
+                <p class="widget_aheto__info widget_aheto__info--address">
+                  425 1st Street, San Francisco, California, USA
+                </p>
+                <p class="widget_aheto__info widget_aheto__info--mail">
+                  <a class="widget_aheto__link" href="mailto:info@financed.com">info@financed.com</a>
+                </p>
+                <p class="widget_aheto__info widget_aheto__info--tel">
+                  <a class="widget_aheto__link" href="tel:(855)233-5385">(855) 233-5385</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_nav_menu widget_nav_menu_">
+              <h2 class="widget-title">Quick Links</h2>
+              <div class="menu-main-container">
+                <ul class="menu">
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Resources</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Podcast</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Help Center</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Terms &amp; Privacy</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Pricing</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Categories</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_nav_menu widget_nav_menu_">
+              <h2 class="widget-title">Support</h2>
+              <div class="menu-main-container">
+                <ul class="menu">
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">FAQ</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Guides &amp; Tutorials</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Case Studies</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Webinars</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Tweet @ Us</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Download</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_mc4wp_form_widget aheto_mc_3">
+              <h2 class="widget-title">Subscribe us</h2>
+              <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-223" method="post" data-id="223" data-name="Email">
+                <div class="mc4wp-form-fields"><input type="email" name="EMAIL" placeholder="Your Email" required="">
+                  <button type="submit">
+                    <i class="icon ion-arrow-right-c"></i>
+                  </button>
+                </div>
+                <label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1526996980"><input
+                  type="hidden" name="_mc4wp_form_id" value="223"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+                <div class="mc4wp-response"></div>
+              </form>
+              <!-- / MailChimp for WordPress Plugin -->
+            </div>
+            <div class="aht-socials ">
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="https://www.facebook.com/">
+                <i class="aht-socials__icon icon ion-social-facebook"></i>
+              </a>
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="https://twitter.com/">
+                <i class="aht-socials__icon icon ion-social-twitter"></i>
+              </a>
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="https://www.tumblr.com/">
+                <i class="aht-socials__icon icon ion-social-tumblr"></i>
+              </a>
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="http://www.youtube.com/">
+                <i class="aht-socials__icon icon ion-social-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="d-lg-block">
+    <div class="aheto-footer-9__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <div class="aheto-footer-9__cr margin-lg-20t margin-lg-30b margin-sm-0b">
+              <p class="aheto-footer-9__cr-text ">© <a href="/">Karma SAAS</a>. All Right Reserved 2019.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 text-right">
+            <div class="aheto-footer-menu margin-lg-20t margin-lg-30b margin-sm-0t">
+              <nav class="menu-main-container">
+                <ul class="main-menu">
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">About Us</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Privacy</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="site-search" id="search-box">
+    <button class="close-btn js-close-search"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <div class="form-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <form role="search" method="get" class="search-form" action="http://ahetopro/" autocomplete="off">
+              <div class="input-group">
+                <input type="search" value="" name="s" class="search-field" placeholder="Enter Keyword" required="">
+              </div>
+            </form>
+            <p class="search-description">Input your search keywords and press Enter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Magnific popup -->
+  <script src="../vendors/magnific/jquery.magnific-popup.min.js"></script>
+  <!-- anm -->
+  <script src="../vendors/animation/anm.min.js"></script>
+  <!-- Google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;#038;&language=en"></script>
+  <script src="../vendors/googlemap/google-maps.js?v=1"></script>
+  <!-- FullCalendar -->
+  <!-- Parallax -->
+  <script src="../vendors/parallax/parallax.min.js"></script>
+  <!-- asRange -->
+  <script src="../vendors/range/jquery.range-min.js"></script>
+  <!-- lightgallery -->
+  <script src="../vendors/lightgallery/lightgallery.min.js"></script>
+  <!-- Main script -->
+  <script src="../vendors/script.js?v=1"></script>
+  <script src="../vendors/spectragram/spectragram.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      jQuery.fn.spectragram.accessData = {
+        accessToken: '4058508404.1677ed0.f87c0182df0d4512a9e01def0c53adb7'
+      }
+
+      $('.instafeed').spectragram('getUserFeed', {
+        size: 'big',
+        max: 6
+      });
+    });
+  </script>
+</body>
+
+</html>

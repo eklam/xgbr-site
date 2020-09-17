@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="../img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="../img/favicon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="../img/favicon-180x180.png" />
+  <meta name="msapplication-TileImage" content="../img/favicon-270x270.png" />
+  <title>SAAS - Blog</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Poppins:300,400,400i,600|Source+Sans+Pro:400,400i,600,700,900|Mukta:400,700,800|Oswald:400,600|Lato:400,400i,700|Roboto:300,400,500,700|Roboto+Slab:400,700|Playfair+Display:400,400i,700i,700|Catamaran:300,400,500,600,700,900|Merriweather:400,700|Montserrat:400,500,600|Nunito|Open+Sans:300,400,500,600|Caveat:400,700|Dancing+Script|Libre+Baskerville:400,700"
+    rel="stylesheet">
+  <!-- STYLES -->
+  <!-- Main Style -->
+  <link rel="stylesheet" id="style-main" href="../css/styles-main.css?v=3">
+  <link rel="stylesheet" id="swiper-main" href="../vendors/swiper/swiper.min.css">
+  <link rel="stylesheet" id="lity-main" href="../vendors/lity/lity.min.css">
+  <link rel="stylesheet" id="mediaelementplayer" href="../vendors/mediaelement/mediaelementplayer.min.css">
+  <link rel="stylesheet" id="range" href="../vendors/range/jquery.range.css">
+  <link rel="stylesheet" id="lightgallery" href="../vendors/lightgallery/lightgallery.min.css">
+  <link rel="stylesheet" id="style-link" href="../css/styles-9.css?v=35">
+  <!-- SCRIPTS -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.3.0.js" integrity="sha256-/Gj+NlY1u/J2UGzM/B2QrWR01trK8ZZqrD5BdqQUsac=" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <script src="../vendors/swiper/swiper.min.js"></script>
+  <!-- Isotope -->
+  <script src="../vendors/isotope/isotope.pkgd.min.js"></script>
+  <!-- Images loaded library -->
+  <script src="../vendors/lazyload/imagesloaded.pkgd.min.js"></script>
+  <!-- MediaElement js library (only for Aheto HTML) -->
+  <script src="../vendors/mediaelement/mediaelement.min.js"></script>
+  <script src="../vendors/mediaelement/mediaelement-and-player.min.js"></script>
+  <!-- Typed animation text -->
+  <script src="../vendors/typed/typed.min.js"></script>
+  <!-- Lity Lightbox -->
+  <script src="../vendors/lity/lity.min.js"></script>
+</head>
+
+<body data-anm=".anm" class="blog--grid">
+  <header class="aheto-header aheto-header-9">
+    <div class="aheto-header-9__nav-wrap">
+      <div class="aheto-header-9__inner">
+        <div class="aheto-header-9__line">
+          <div class="aheto-header-9__logo">
+            <div class="logo">
+              <a class="logo__link" href="">
+                <div class="logo__img-holder">
+                  <img class="logo__img" src="../img/home/home-saas/logo-1.png" alt="Logo image">
+                </div>
+                <div class="logo__text-holder">
+                  <h3 class="logo__text">Karma</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="aheto-header-9__menu js-menu js-menu-height">
+            <ul class="main-menu padding-lg-5t padding-md-0t">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item--mega-menu ">
+                <a href="home-saas.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="about-saas.html">About</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                <a href="#">Features</a>
+                <ul class="sub-menu menu-depth-1">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="features-saas.html">Features saas</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="features-details-saas.html">Features details saas</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                <a href="#">Blog</a>
+                <ul class="sub-menu menu-depth-1">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog-saas.html">Blog saas</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="post-saas.html">Post saas</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="pricing-saas.html">Pricing</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="contact-saas.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="aheto-header-9__authentication">
+              <div class="authentication">
+                <button class="authentication__sign-in" type="button">Sign In</button>
+                <button class="authentication__sign-up" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+          <div class="aheto-header-9__hamburger">
+            <button class="hamburger hamburger--squeeze js-hamburger js-hamburger--body-over" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="aheto-banner aheto-banner--height-450 aheto-banner--height-mob-200" style="background-image: url('../img/SAAS/feature_bg.png'); background-position: center">
+    <div class="container d-flex h-100 justify-content-center align-items-center">
+      <div class="row padding-lg-60t padding-sm-0t">
+        <div class="aheto-heading t-center aheto-heading--t-white">
+          <h1 class="aheto-heading__title          t-light ">Blog</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="aht-page container margin-lg-100b margin-lg-120t margin-md-80t margin-md-80b margin-sm-50t margin-sm-50b
+    aht-page--no-sb
+    
+    
+    
+    ">
+    <div class="aht-page__inner">
+      <div class="aht-page__content">
+        <div class="aht-page__content-inner">
+          <div class="row">
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-image border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Notarization</a>
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <img src="../img/inner-pages/blog/Image-one.jpg" alt="blog img" class="js-bg border-radius-5t">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">How We`re Transforming Yet Untouched Market</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-image border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <img src="../img/inner-pages/blog/Image-two.jpg" alt="blog img" class="js-bg border-radius-5t">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">Online Notarization Bill Passes in Tennessee</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-quote border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Notarization</a>
+                  </div>
+                  <div class="image-wrapper ">
+                  </div>
+                </div>
+                <div class="content-quote-wrapper">
+                  <p>Follow your passion, be prepared to work hard and sacrifice, don’t let anyone limit your dreams.</p>
+                  <cite>- Michale vouge</cite>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-image border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Notarization</a>
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <img src="../img/inner-pages/blog/image-9.jpg" alt="blog img" class="js-bg border-radius-5t">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">Online Notarization Bill Passes in Tennessee</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-standard border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper ">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">What Does a Notary Public Do?</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-slider border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <div class="swiper swiper--blog-gallery">
+                      <div class="swiper-container" data-speed="600" data-spacebetween="0" data-slidesPerView="1">
+                        <div class="swiper-wrapper ">
+                          <div class="swiper-slide border-radius-5t">
+                            <img class="js-bg border-radius-5t" src="../img/inner-pages/blog/image-4.jpg" alt="Image">
+                          </div>
+                          <div class="swiper-slide border-radius-5t">
+                            <img class="js-bg border-radius-5t" src="../img/inner-pages/blog/Image-one.jpg" alt="Image">
+                          </div>
+                          <div class="swiper-slide border-radius-5t">
+                            <img class="js-bg border-radius-5t" src="../img/inner-pages/blog/Image-three.png" alt="Image">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-prev "><i class="fa fa-angle-left"></i></div>
+                      <div class="swiper-button-next "><i class="fa fa-angle-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">How We`re Transforming Yet Untouched Market</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-video border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Notarization</a>
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper video-wrapper ">
+                    <a href="https://www.youtube.com/watch?v=668nUCeBHyY" class="w-100 aheto-video-link js-mfp-video border-radius-5t">
+                      <img width="1280" height="720" src="../img/inner-pages/blog/image-5.jpg" class="js-bg border-radius-5t" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">What Does a Notary Public Do?</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-image border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Web design</a>
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <img src="../img/inner-pages/blog/image-6.jpg" alt="blog img" class="js-bg border-radius-5t">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">How We`re Transforming Yet Untouched Market</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item ">
+              <article class="post format-image border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Tips</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <img src="../img/inner-pages/blog/image-7.jpg" alt="blog img" class="js-bg border-radius-5t">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">Online Notarization Bill Passes in Tennessee</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item hide">
+              <article class="post format-audio border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Market</a>
+                  </div>
+                  <div class="image-wrapper ">
+                    <div class="audio-wrapper">
+                      <audio controls>
+                        <source src="../audio/audio-sample.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">How We`re Transforming Yet Untouched Market</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item hide">
+              <article class="post format-quote border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Notarization</a>
+                  </div>
+                  <div class="image-wrapper ">
+                  </div>
+                </div>
+                <div class="content-quote-wrapper">
+                  <p>Follow your passion, be prepared to work hard and sacrifice, don’t let anyone limit your dreams.</p>
+                  <cite>- Michale vouge</cite>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4  margin-lg-30b blog_item hide">
+              <article class="post format-image border-radius-5  ">
+                <div class="content-top-wrapper">
+                  <div class="post-cats">
+                    <a href="#" rel="category tag">Notarization</a>
+                  </div>
+                  <div class="image-wrapper border-radius-5t">
+                    <img src="../img/inner-pages/blog/image-8.jpg" alt="blog img" class="js-bg border-radius-5t">
+                  </div>
+                </div>
+                <div class="content-wrapper">
+                  <p class="post-date">25 Jul, 2019</p>
+                  <h1 class="post-title"><a href="#">What Does a Notary Public Do?</a></h1>
+                  <p>Design adds clarity. Using colour, typo graphy, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of...</p>
+                  <a href="#" class="aheto-btn aheto-btn--underline">Read full post</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="aht-page__content-inner">
+          <div class="blog-pagination-wrapper blog-pagination-wrapper--without-numbers">
+            <div class="pagination">
+              <a href="javascript:void(0)" class="pagn-16 pagination__learn-more ">Load more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="aheto-footer aheto-footer-9">
+    <div class="aheto-footer-9__main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_aheto ">
+              <div class="widget_aheto__logo">
+                <img src="../img/home/footer-logo-5.png" alt="footer">
+              </div>
+              <div class="widget_aheto__infos">
+                <p class="widget_aheto__info widget_aheto__info--address">
+                  425 1st Street, San Francisco, California, USA
+                </p>
+                <p class="widget_aheto__info widget_aheto__info--mail">
+                  <a class="widget_aheto__link" href="mailto:info@financed.com">info@financed.com</a>
+                </p>
+                <p class="widget_aheto__info widget_aheto__info--tel">
+                  <a class="widget_aheto__link" href="tel:(855)233-5385">(855) 233-5385</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_nav_menu widget_nav_menu_">
+              <h2 class="widget-title">Quick Links</h2>
+              <div class="menu-main-container">
+                <ul class="menu">
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Resources</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Podcast</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Help Center</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Terms &amp; Privacy</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Pricing</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Categories</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_nav_menu widget_nav_menu_">
+              <h2 class="widget-title">Support</h2>
+              <div class="menu-main-container">
+                <ul class="menu">
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">FAQ</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Guides &amp; Tutorials</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Case Studies</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Webinars</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Tweet @ Us</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Download</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="widget widget_mc4wp_form_widget aheto_mc_3">
+              <h2 class="widget-title">Subscribe us</h2>
+              <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-223" method="post" data-id="223" data-name="Email">
+                <div class="mc4wp-form-fields"><input type="email" name="EMAIL" placeholder="Your Email" required="">
+                  <button type="submit">
+                    <i class="icon ion-arrow-right-c"></i>
+                  </button>
+                </div>
+                <label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1526996980"><input
+                  type="hidden" name="_mc4wp_form_id" value="223"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+                <div class="mc4wp-response"></div>
+              </form>
+              <!-- / MailChimp for WordPress Plugin -->
+            </div>
+            <div class="aht-socials ">
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="https://www.facebook.com/">
+                <i class="aht-socials__icon icon ion-social-facebook"></i>
+              </a>
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="https://twitter.com/">
+                <i class="aht-socials__icon icon ion-social-twitter"></i>
+              </a>
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="https://www.tumblr.com/">
+                <i class="aht-socials__icon icon ion-social-tumblr"></i>
+              </a>
+              <a class="aht-socials__link aht-btn--dark aht-btn--trans " href="http://www.youtube.com/">
+                <i class="aht-socials__icon icon ion-social-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="d-lg-block">
+    <div class="aheto-footer-9__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <div class="aheto-footer-9__cr margin-lg-20t margin-lg-30b margin-sm-0b">
+              <p class="aheto-footer-9__cr-text ">© <a href="/">Karma SAAS</a>. All Right Reserved 2019.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 text-right">
+            <div class="aheto-footer-menu margin-lg-20t margin-lg-30b margin-sm-0t">
+              <nav class="menu-main-container">
+                <ul class="main-menu">
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">About Us</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Privacy</a></li>
+                  <li class="menu-item  menu-item-type-post_type menu-item-object-page"><a href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="site-search" id="search-box">
+    <button class="close-btn js-close-search"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <div class="form-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <form role="search" method="get" class="search-form" action="http://ahetopro/" autocomplete="off">
+              <div class="input-group">
+                <input type="search" value="" name="s" class="search-field" placeholder="Enter Keyword" required="">
+              </div>
+            </form>
+            <p class="search-description">Input your search keywords and press Enter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Magnific popup -->
+  <script src="../vendors/magnific/jquery.magnific-popup.min.js"></script>
+  <!-- anm -->
+  <script src="../vendors/animation/anm.min.js"></script>
+  <!-- Google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;#038;&language=en"></script>
+  <script src="../vendors/googlemap/google-maps.js?v=1"></script>
+  <!-- FullCalendar -->
+  <!-- Parallax -->
+  <script src="../vendors/parallax/parallax.min.js"></script>
+  <!-- asRange -->
+  <script src="../vendors/range/jquery.range-min.js"></script>
+  <!-- lightgallery -->
+  <script src="../vendors/lightgallery/lightgallery.min.js"></script>
+  <!-- Main script -->
+  <script src="../vendors/script.js?v=1"></script>
+  <script src="../vendors/spectragram/spectragram.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      jQuery.fn.spectragram.accessData = {
+        accessToken: '4058508404.1677ed0.f87c0182df0d4512a9e01def0c53adb7'
+      }
+
+      $('.instafeed').spectragram('getUserFeed', {
+        size: 'big',
+        max: 6
+      });
+    });
+  </script>
+</body>
+
+</html>
